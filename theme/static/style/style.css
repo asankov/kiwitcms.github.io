@@ -174,6 +174,8 @@ nav button {
 
 /* Article styles */
 .article h1, .page h1 { margin-bottom: 3rem; }
+/* override for index page */
+.index-page-header h1 { margin-bottom: 0; }
 .article h2 { margin-bottom: 2.75rem; }
 .article h3 { margin-bottom: 2.5rem; }
 .article h4 { margin-bottom: 2.25rem; }
@@ -462,6 +464,8 @@ pre code {
     padding-top: 6%;
     line-height: 1.4em;
  }
+/* overrides for features page */
+.features div.col-12 { padding-top: 0 }
 
 @media screen and (max-width: 1360px){
     /* navigation section */
@@ -590,11 +594,11 @@ pre code {
        centered vertically on smaller screens which looks a bit better
        compared to the default top alignment
     */
-    .header .col-12 {
+    .index-page-header .col-12 {
         display: flex;
         align-items: flex-end;
     }
-    .header .header-img {
+    .index-page-header .header-img {
         background-position: center;
     }
 
@@ -707,11 +711,11 @@ pre code {
     */
 
     /*header section*/
-    .header .col-7 {
+    .index-page-header .col-7 {
         display: none;
     }
 
-    .header .col-5 {
+    .index-page-header .col-5 {
         width: 100%;
     }
 
